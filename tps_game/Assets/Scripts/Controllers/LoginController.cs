@@ -26,7 +26,7 @@ public class LoginController : MonoBehaviour
     {
         userName = (InputField)GameObject.Find("Canvas/UserName").GetComponent<InputField>();
         passWord = (InputField)GameObject.Find("Canvas/PassWord").GetComponent<InputField>();
-        GameManager.Instance.SocketController.bindServer("127.0.0.1", 8080);
+        GameManager.Instance.SocketController.bindServer("39.97.50.170", 80);
         if (GameManager.Instance.SocketController.login(userName.text, passWord.text))
         {
             GameManager.PlayerId = userName.text;

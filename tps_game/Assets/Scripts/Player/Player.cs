@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        GameManager.Instance.SocketController.bindServer("127.0.0.1", 8080);
+        GameManager.Instance.SocketController.bindServer("39.97.50.170", 8080);
         if (GameManager.LoadGameFlag)
         {
             loadPlayer();

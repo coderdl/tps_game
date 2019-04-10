@@ -20,7 +20,7 @@ public class ModeController : MonoBehaviour
 
     void newGameOnclick()
     {
-        GameManager.Instance.SocketController.bindServer("127.0.0.1", 8080);
+        GameManager.Instance.SocketController.bindServer("39.97.50.170", 8080);
         GameManager.GameId = GameManager.Instance.SocketController.newGame();
         GameManager.LoadGameFlag = false;
         GameManager.Instance = null;
@@ -30,7 +30,7 @@ public class ModeController : MonoBehaviour
 
     public void loadGameOnclick()
     {
-        GameManager.Instance.SocketController.bindServer("127.0.0.1", 8080);
+        GameManager.Instance.SocketController.bindServer("39.97.50.170", 8080);
         if (GameManager.Instance.SocketController.canLoadGame())
         {
             GameManager.LoadGameFlag = true;
